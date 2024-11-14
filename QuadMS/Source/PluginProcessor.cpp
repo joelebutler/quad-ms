@@ -120,7 +120,7 @@ bool QuadMSAudioProcessor::isBusesLayoutSupported (const BusesLayout& layouts) c
 
     // This checks if the input layout matches the output layout
    #if ! JucePlugin_IsSynth
-    if (layouts.getMainOutputChannelSet() != layouts.getMainInputChannelSet())
+    if (layouts.getMainInputChannelSet() != juce::AudioChannelSet::mono())
         return false;
    #endif
 
@@ -154,7 +154,10 @@ void QuadMSAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce:
     {
         auto* channelData = buffer.getWritePointer (channel);
 
-        // ..do something to the data...
+        // Apply gain variable to samples in the buffer
+        for (int sample = 0; sample < buffer.getNumSamples(); ++sample) {
+            channelData[sample] = buffer.getSample(channel, sample) * rawVolume;
+        }
     }
 }
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="O3tf27" name="QuadMS" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" cppLanguageStandard="20">
-  <MAINGROUP id="x7oF2N" name="QuadMS">
+<JUCERPROJECT id="O3tf27" name="QuadMS Child" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" cppLanguageStandard="20"
+              pluginDesc="Child controller for QuadMS processing" pluginManufacturer="Joel Butler">
+  <MAINGROUP id="x7oF2N" name="QuadMS Child">
     <GROUP id="{3A97838D-77D4-DD12-D0D3-139001584E50}" name="Source">
       <FILE id="oWvuLB" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
