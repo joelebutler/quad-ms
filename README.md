@@ -171,17 +171,166 @@ These will be routed as follows (chart information provided by Jules Ryckebusch)
 **<a style="color: green;">Green</a> (I) is Side Channel In Phase**
 **<a style="color: red;">Red</a> (O) is Side Channel Out of Phase**
 
-| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Out | Routing |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-- |
-| <span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span> | <span style="background-color: red; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span> | | | | | | | **1** | **Left** |
-| | | <span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span> |  <span style="background-color: red; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span> | | | | | **2** | **Right** |
-| <span style="background-color: none; width: 25px; height: 25px; padding: 0; display: block;"></span> | | | | | | | | **3** | **Left** |
-| <span style="background-color: none; width: 25px; height: 25px; padding: 0; display: block;"></span> | | | | | | | | **4** | **LFE** |
-| <span style="background-color: none; width: 25px; height: 25px; padding: 0; display: block;"></span> | | | | | | | | **5** | **Left Side** |
-| <span style="background-color: none; width: 25px; height: 25px; padding: 0; display: block;"></span> | | | | | | | | **6** | **Right Side** |
-| <span style="background-color: none; width: 25px; height: 25px; padding: 0; display: block;"></span> | | | | | | <span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span> | <span style="background-color: red; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span> | **7** | **Left Rear** |
-| <span style="background-color: none; width: 25px; height: 25px; padding: 0; display: block;"></span> | | | | <span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span> | <span style="background-color: red; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span> | | | **8** | **Right Rear** |
-| <span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span> | <span style="background-color: green; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">I</span> | | | | | | | **9** | **Left FH** |
-| <span style="background-color: none; width: 25px; height: 25px; padding: 0; display: block;"></span> | | <span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span> | <span style="background-color: green; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">I</span> | | | | | **10** | **Right FH** |
-| <span style="background-color: none; width: 25px; height: 25px; padding: 0; display: block;"></span> | | | | | | <span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span> | <span style="background-color: green; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">I</span> | **11** | **Left RH** |
-| <span style="background-color: none; width: 25px; height: 25px; padding: 0; display: block;"></span> | | | | <span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span> | <span style="background-color: green; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">I</span> | | | **12** | **Right RH** |
+
+<table>
+<thead>
+<tr>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">7</th>
+<th align="center">8</th>
+<th align="center">Out</th>
+<th align="left">Routing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span></td>
+<td align="center"><span style="background-color: red; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>1</strong></td>
+<td align="left"><strong>Left</strong></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span></td>
+<td align="center"><span style="background-color: red; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>2</strong></td>
+<td align="left"><strong>Right</strong></td>
+</tr>
+<tr>
+<td align="center"><span></span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>3</strong></td>
+<td align="left"><strong>Left</strong></td>
+</tr>
+<tr>
+<td align="center"><span></span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>4</strong></td>
+<td align="left"><strong>LFE</strong></td>
+</tr>
+<tr>
+<td align="center"><span></span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>5</strong></td>
+<td align="left"><strong>Left Side</strong></td>
+</tr>
+<tr>
+<td align="center"><span></span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>6</strong></td>
+<td align="left"><strong>Right Side</strong></td>
+</tr>
+<tr>
+<td align="center"><span></span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span></td>
+<td align="center"><span style="background-color: red; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span></td>
+<td align="center"><strong>7</strong></td>
+<td align="left"><strong>Left Rear</strong></td>
+</tr>
+<tr>
+<td align="center"><span></span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span></td>
+<td align="center"><span style="background-color: red; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>8</strong></td>
+<td align="left"><strong>Right Rear</strong></td>
+</tr>
+<tr>
+<td align="center"><span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span></td>
+<td align="center"><span style="background-color: green; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>9</strong></td>
+<td align="left"><strong>Left FH</strong></td>
+</tr>
+<tr>
+<td align="center"><span></span></td>
+<td align="center"></td>
+<td align="center"><span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span></td>
+<td align="center"><span style="background-color: green; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>10</strong></td>
+<td align="left"><strong>Right FH</strong></td>
+</tr>
+<tr>
+<td align="center"><span></span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span></td>
+<td align="center"><span style="background-color: green; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span></td>
+<td align="center"><strong>11</strong></td>
+<td align="left"><strong>Left RH</strong></td>
+</tr>
+<tr>
+<td align="center"><span></span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span style="background-color: black; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">M</span></td>
+<td align="center"><span style="background-color: green; width: 25px; height: 25px; padding: 0; display: inline-flex; color: white; font-weight: bold; border-radius: 3px; justify-content: center; align-items: center;">O</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><strong>12</strong></td>
+<td align="left"><strong>Right RH</strong></td>
+</tr>
+</tbody>
+</table>
