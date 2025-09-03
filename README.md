@@ -1,11 +1,6 @@
 # Quad MS Templates <!-- omit in toc -->
 This is a repository containing templates to process audio recorded via the Quad MS array developed by Jules Ryckebusch within different DAWs. Downloadable files as well as an explanation of methodology used in template creation will be provided to support use of the system as well as further expansion. 
 
-**INSERT LINK ONCE ACCEPTED**
-Read more about Quad MS processing at Jules' AES paper [here](https://www.google.com/). 
-**INSERT LINK ONCE ACCEPTED**
-<hr>
-
 ## Table of Contents <!-- omit in toc -->
 - [Template Use](#template-use)
   - [Logic Pro](#logic-pro)
